@@ -1,3 +1,3 @@
 # sample-repo
 Sample code
-this project is owned by MICROSOFT INDIAN
+this project is owned by Hacker Group

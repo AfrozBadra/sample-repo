@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritesh - Personal Webpage</title>
+
+    <style>
+        body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+            background:#f4f4f4;
+        }
+
+        header{
+            background:#333;
+            color:white;
+            padding:20px;
+            text-align:center;
+        }
+
+        nav{
+            background:#555;
+            padding:10px;
+            text-align:center;
+        }
+
+        nav a{
+            color:white;
+            margin:0 15px;
+            text-decoration:none;
+            font-weight:bold;
+        }
+
+        nav a:hover{
+            text-decoration:underline;
+        }
+
+        .container{
+            width:90%;
+            margin:auto;
+            padding:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            margin:20px 0;
+            border-radius:8px;
+            box-shadow:0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .gallery{
+            display:flex;
+            gap:15px;
+            flex-wrap:wrap;
+        }
+
+        .gallery img{
+            width:200px;
+            border-radius:8px;
+        }
+
+        footer{
+            background:#333;
+            color:white;
+            text-align:center;
+            padding:15px;
+            margin-top:20px;
+        }
+
+        button{
+            padding:10px 20px;
+            border:none;
+            background:#333;
+            color:white;
+            border-radius:5px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#555;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Welcome to Ritesh's Website</h1>
+    <p>A simple personal webpage</p>
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <div class="card" id="about">
+        <h2>About Me</h2>
+        <p>Hello! My name is <b>Ritesh</b>. This is my sample HTML webpage. I enjoy learning web development, designing websites, and building projects.</p>
+    </div>
+
+    <div class="card" id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://via.placeholder.com/200">
+            <img src="https://via.placeholder.com/200">
+            <img src="https://via.placeholder.com/200">
+        </div>
+    </div>
+
+    <div class="card" id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to contact me, click the button below.</p>
+        <button onclick="alert('Thanks for visiting Ritesh!')">Say Hello</button>
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Ritesh | Sample HTML Webpage</p>
+</footer>
+
+</body>
+</html>
