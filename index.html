@@ -3,127 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ritesh - Personal Webpage</title>
-
-    <style>
-        body{
-            margin:0;
-            font-family: Arial, Helvetica, sans-serif;
-            background:#f4f4f4;
-        }
-
-        header{
-            background:#333;
-            color:white;
-            padding:20px;
-            text-align:center;
-        }
-
-        nav{
-            background:#555;
-            padding:10px;
-            text-align:center;
-        }
-
-        nav a{
-            color:white;
-            margin:0 15px;
-            text-decoration:none;
-            font-weight:bold;
-        }
-
-        nav a:hover{
-            text-decoration:underline;
-        }
-
-        .container{
-            width:90%;
-            margin:auto;
-            padding:20px;
-        }
-
-        .card{
-            background:white;
-            padding:20px;
-            margin:20px 0;
-            border-radius:8px;
-            box-shadow:0 0 10px rgba(0,0,0,0.1);
-        }
-
-        .gallery{
-            display:flex;
-            gap:15px;
-            flex-wrap:wrap;
-        }
-
-        .gallery img{
-            width:200px;
-            border-radius:8px;
-        }
-
-        footer{
-            background:#333;
-            color:white;
-            text-align:center;
-            padding:15px;
-            margin-top:20px;
-        }
-
-        button{
-            padding:10px 20px;
-            border:none;
-            background:#333;
-            color:white;
-            border-radius:5px;
-            cursor:pointer;
-        }
-
-        button:hover{
-            background:#555;
-        }
-    </style>
+    <title>Ritesh - Personal Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-    <h1>Welcome to Ritesh's Website</h1>
-    <p>A simple personal webpage</p>
+<header class="hero">
+    <h1 class="gradient-text">Ritesh</h1>
+    <p class="subtitle">Web Developer & Designer</p>
 </header>
 
-<nav>
-    <a href="#">Home</a>
+<nav class="navbar">
     <a href="#about">About</a>
-    <a href="#gallery">Gallery</a>
+    <a href="#gallery">Projects</a>
     <a href="#contact">Contact</a>
 </nav>
 
 <div class="container">
-
-    <div class="card" id="about">
+    <section class="card" id="about">
         <h2>About Me</h2>
-        <p>Hello! My name is <b>Ritesh</b>. This is my sample HTML webpage. I enjoy learning web development, designing websites, and building projects.</p>
-    </div>
+        <p>Hello! My name is <b>Ritesh</b>. I enjoy learning web development, designing beautiful intuitive websites, and bringing creative projects to life. This portfolio is a showcase of my journey and skills.</p>
+    </section>
 
-    <div class="card" id="gallery">
-        <h2>Gallery</h2>
+    <section class="card" id="gallery">
+        <h2>My Work</h2>
         <div class="gallery">
-            <img src="https://via.placeholder.com/200">
-            <img src="https://via.placeholder.com/200">
-            <img src="https://via.placeholder.com/200">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=400&h=300" alt="Project 1">
+                <div class="overlay"><span>Web Design</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?auto=format&fit=crop&q=80&w=400&h=300" alt="Project 2">
+                <div class="overlay"><span>Development</span></div>
+            </div>
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?auto=format&fit=crop&q=80&w=400&h=300" alt="Project 3">
+                <div class="overlay"><span>App UI</span></div>
+            </div>
         </div>
-    </div>
+    </section>
 
-    <div class="card" id="contact">
-        <h2>Contact</h2>
-        <p>If you'd like to contact me, click the button below.</p>
-        <button onclick="alert('Thanks for visiting Ritesh!')">Say Hello</button>
-    </div>
-
+    <section class="card" id="contact">
+        <h2>Let's Connect</h2>
+        <p>If you'd like to collaborate or just want to say hi, feel free to reach out!</p>
+        <button class="cta-button" onclick="alert('Thanks for visiting my portfolio!')">Say Hello 👋</button>
+    </section>
 </div>
 
 <footer>
-    <p>© 2026 Ritesh | Sample HTML Webpage</p>
+    <p>© 2026 Ritesh | Designed with passion</p>
 </footer>
 
 </body>
